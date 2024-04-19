@@ -4,6 +4,7 @@
     --background-color: #8e32c6;
     --placeholder-color: #959595;
     --footer-background-color: #021635;
+    --time-color: #d8d8d8;
 }
 
 .header-wrap {
@@ -116,6 +117,7 @@
     background-image: url(../img/background-two.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 2px solid var(--title-color);
 }
 
 .benefice-list {
@@ -126,10 +128,102 @@
     justify-content: space-between;
 }
 
-.benefice-item {
+.benefice-title {
     font-weight: 400;
     font-size: 36px;
     text-align: center;
     font-family: "Playfair Display", sans-serif;
     color: var(--title-color);
+}
+
+.benefice-item:nth-child(2) {
+    border-left: 1px solid var(--title-color);
+    border-right: 1px solid var(--title-color);
+    padding-left: 95px;
+    padding-right: 95px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.rewiews {
+    padding-top: 24px;
+    padding-bottom: 111px;
+    background-image: url(../img/plants.png), url(../img/background-three.png);
+    background-size: 240px, cover;
+    background-repeat: no-repeat;
+    background-position: left bottom, center;
+    border-bottom: 2px solid var(--title-color);
+}
+
+.rewiews-title {
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: var(--title-color);
+    font-family: "Playfair Display", sans-serif;
+    margin-bottom: 24px;
+}
+
+.rewiews-list {
+    display: flex;
+    justify-content: center;
+    gap: 93px;
+}
+
+.rewiews-item {
+    border-radius: 15px;
+    box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
+    background: linear-gradient(135deg, #00e5e6 7.29%, #00a8f7 26.04%, #9a76f9 62.5%, #cc5ec2 100%);
+    padding: 49px 14px 29px 13px;
+    width: 230px;
+}
+
+.rewiews-item:nth-child(2) {
+    box-shadow: 0 14px 0 -5px #9159b1, 0 30px 0 -13px #61337c;
+    background: linear-gradient(135deg, #ff68b4 0%, #ff45e1 26.04%, #ce3aff 62.84%, #8961ff 100%);
+}
+
+.rewiews-item:nth-child(3) {
+    box-shadow: 0 14px 0 -5px #b95a4c, 0 30px 0 -13px #732f26;
+    background: linear-gradient(135deg, #5bff28 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
+}
+
+.rewiews-text {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--title-color);
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 8px;
+}
+
+.rewiews-word {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--time-color);
+}
+
+.rewiews-wrap {
+    margin-top: 47px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.rewiews-img {
+    width: 31px;
+    height: 31px;
+}
+
+.rewiews-name {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--title-color);
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1px;
+}
+
+.rewiews-box-text {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--time-color);
 }
