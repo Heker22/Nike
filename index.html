@@ -178,18 +178,34 @@
                 <h2 class="order-title">
                     Order
                 </h2>
-                <form class="order-form" >
-<input  class="form-input-big" type="email" placeholder="Write your email                                            Confirm">
-<input  class="form-input" type="text" placeholder="Your Country">
-<input  class="form-input" type="text" placeholder="Your City">
-<input  class="form-input" type="text" placeholder="Your Adress">
-<button class="order-btn"  type="submit">
-    Order my Nike
-</button>
+                <form class="order-form">
+                    <input class="form-input-big" type="email"
+                        placeholder="Write your email                                            Confirm">
+                    <input class="form-input" type="text" placeholder="Your Country">
+                    <input class="form-input" type="text" placeholder="Your City">
+                    <input class="form-input" type="text" placeholder="Your Adress">
+                    <button class="order-btn" type="submit" data-modal-open>
+                        Order my Nike
+                    </button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <span class="modal-word">
+                                Thanks for buying our products!
+                            </span>
+                            <p class="modal-text">
+                                Ur final import is 250£
+                            </p>
+                            <button class="modal-btn" data-modal-close>
+                                keep buying
+                            </button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
+    <script src="./js/script.js"></script>
 </body>
+
 
 </html>
