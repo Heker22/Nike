@@ -180,14 +180,18 @@
                 </h2>
                 <form class="order-form">
                     <input class="form-input-big" type="email"
-                        placeholder="Write your email                                            Confirm">
-                    <input class="form-input" type="text" placeholder="Your Country">
-                    <input class="form-input" type="text" placeholder="Your City">
-                    <input class="form-input" type="text" placeholder="Your Adress">
+                        placeholder="Write your email                                            Confirm"
+                        requiredrequired minlength="3" maxlength="25"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                    <input class="form-input" type="text" placeholder="Your Country" required minlength="3" 
+                        maxlength="20" pattern="^(?=\S*\s)(?=[^a-zA-Z]*[a-zA-Z])(?=\D*\d)[a-zA-Z\d\s',.#/-]*$">
+                    <input class="form-input" type="text" placeholder="Your City" required minlength="3"
+                        maxlength="20" pattern="^(?=\S*\s)(?=[^a-zA-Z]*[a-zA-Z])(?=\D*\d)[a-zA-Z\d\s',.#/-]*$">
+                    <input class="form-input" type="text" placeholder="Your Adress" required minlength="3"
+                        maxlength="20" pattern="^(?=\S*\s)(?=[^a-zA-Z]*[a-zA-Z])(?=\D*\d)[a-zA-Z\d\s',.#/-]*$">
                     <button class="order-btn" type="submit" data-modal-open>
                         Order my Nike
                     </button>
-                
                 </form>
             </div>
         </section>
@@ -197,7 +201,7 @@
                     Thanks for buying our products!
                 </span>
                 <p class="modal-text">
-                    Ur final import is 250£
+                    Ur final import is 250.00£
                 </p>
                 <button class="modal-btn" data-modal-close>
                     keep buying
@@ -205,6 +209,50 @@
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <p class="footer-text">
+                            Have a question?
+                        </p>
+                    </li>
+                    <li class="footer-item">
+                        <p class="footer-text">
+                            Have a proposal for cooperation?
+                        </p>
+                    </li>
+                    <li class="footer-item">
+                        <p class="footer-text">
+                            Advertising questions?
+                        </p>
+                    </li>
+                </ul>
+                <ul class="footer-list-wrap">
+                    <li class="footer-item-wrap">
+                        <a class="footer-link" href="#">ColoRawe_support@gmail.com</a>
+                    </li>
+                    <li class="footer-item-wrap">
+                        <a class="footer-link" href="#">ColoRawe_Cooperation@gmail.com</a>
+                    </li>
+                    <li class="footer-item-wrap">
+                        <a class="footer-link" href="#">ColoRawe_Advertising@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-wrap-second">
+                <div class="footer-wrap-text">
+                    <p class="footer-text-wrap">2022 ColoRawe @All rights reserved</p>
+                    <p class="footer-text-wrap">United States</p>
+                </div>
+                <div class="footer-img-wrap">
+                    <img class="footer-img" src="./img/nike-logo.svg" alt="">
+                    <p class="footer-word">С&R</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 
