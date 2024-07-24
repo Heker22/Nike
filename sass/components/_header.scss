@@ -1,0 +1,54 @@
+.header {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    background-color: $footer-background-color;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 100px;
+        height: 60px;
+    }
+
+    &__nav-list {
+        display: flex;
+        gap: 29px;
+        align-items: center;
+    }
+
+    &__nav-link {
+        color: $nav-color;
+        font-weight: 400;
+        font-size: 24px;
+        transition-property: color;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+
+
+        &:hover,
+        &:focus {
+            color: $background-color;
+        }
+    }
+    
+    
+    &__list {
+        display: flex;
+        gap: 10px;
+        color: $nav-color;
+        font-weight: 300;
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+

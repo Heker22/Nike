@@ -1,0 +1,38 @@
+.benefice {
+    padding-top: 105px;
+    padding-bottom: 105px;
+    background-image: url(../img/background-two.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid $title-color;
+
+    &__list {
+        border: 5px solid $background-color;
+        width: 1110px;
+        padding: 25px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        font-family: "Playfair Display", sans-serif;
+        color: $title-color;
+    }
+
+    &__item:nth-child(2) {
+        border-left: 1px solid $title-color;
+        border-right: 1px solid $title-color;
+        padding-left: 95px;
+        padding-right: 95px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+
+
+
+

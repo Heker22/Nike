@@ -1,0 +1,91 @@
+.rewiews {
+    padding-top: 24px;
+    padding-bottom: 111px;
+    background-image: url(../img/plants.png), url(../img/background-three.png);
+    background-size: 240px, cover;
+    background-repeat: no-repeat;
+    background-position: left bottom, center;
+    border-bottom: 2px solid $title-color;
+
+    &__title {
+        font-weight: 400;
+        font-size: 48px;
+        text-align: center;
+        color: $title-color;
+        font-family: "Playfair Display", sans-serif;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 93px;
+    }
+
+    &__item {
+        border-radius: 15px;
+        box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
+        background: linear-gradient(135deg, #00e5e6 7.29%, #00a8f7 26.04%, #9a76f9 62.5%, #cc5ec2 100%);
+        padding: 49px 14px 29px 13px;
+        width: 230px;
+        transition-property: transform;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+
+
+        &:nth-child(2) {
+            box-shadow: 0 14px 0 -5px #9159b1, 0 30px 0 -13px #61337c;
+            background: linear-gradient(135deg, #ff68b4 0%, #ff45e1 26.04%, #ce3aff 62.84%, #8961ff 100%);
+        }
+
+        &:nth-child(3) {
+            box-shadow: 0 14px 0 -5px #b95a4c, 0 30px 0 -13px #732f26;
+            background: linear-gradient(135deg, #5bff28 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        color: $title-color;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 8px;
+    }
+
+    &__word {
+        font-weight: 400;
+        font-size: 14px;
+        color: $time-color;
+    }
+
+    &__wrap {
+        margin-top: 47px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    &__img {
+        width: 31px;
+        height: 31px;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 14px;
+        color: $title-color;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 1px;
+    }
+
+    &__box-text {
+        font-weight: 400;
+        font-size: 12px;
+        color: $time-color;
+    }
+}

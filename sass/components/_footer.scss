@@ -1,0 +1,50 @@
+.footer {
+    padding-top: 24px;
+    padding-bottom: 50px;
+    background-color: $footer-background-color;
+    font-family: "Roboto", sans-serif;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        color: $title-color;
+        border-bottom: 1px solid $placeholder-color;
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 24px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $title-color;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__wrap-second {
+        padding-top: 24px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrap-text {
+        font-weight: 400;
+        font-size: 18px;
+        color: $title-color;
+    }
+
+    &__word {
+        font-weight: 400;
+        font-size: 24px;
+        font-family: "PT Serif", sans-serif;
+        color: $title-color;
+    }
+}
